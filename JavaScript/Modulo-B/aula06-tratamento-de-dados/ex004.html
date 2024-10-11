@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            border: 1px solid black;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+
+        .js {
+            background-color: #ccc;
+            padding: 15px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        span {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Funcionalidade que podem ser feitas para formatar Strings</h1>
+        <h2>STRING</h2>
+        <div class="js">
+            <p>s.length - <span>Mostra quatos caracteres a string tem</span></p>
+            <p>s.toUpperCase() - <span>Tudo para MAIÚSCULAS</span></p>
+            <p>s.toLowerCase() - <span>Tudo para minúsculas</span></p>
+        </div>
+
+
+    </section>
+
+    <script>
+        var nome = window.prompt('Qual seu nome?.')
+
+        //.write - escreve a mensagem não pagina
+
+        document.write(`Olá, <strong>${nome}</strong>! seu nome tem ${nome.length} letras. <br>`) //document.length - Conta cquantas letras foi digitado
+
+        document.write(`Seu nome em letras maiúsculas fica assim, <strong>${nome.toUpperCase()}</strong>. <br>`) // document.toUperCase - colocar todas as letras digitadas em MAIUSCULAS
+
+        document.write(`e em letras minusculas fica assim <i>${nome.toLowerCase()}</i>`) // document.toLowerCase - Coloca todas as letras digitadas em minusculas
+    </script>
+</body>
+</html>

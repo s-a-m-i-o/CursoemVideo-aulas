@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>    
+
+    <div class="explicacao">
+        <h2>Eventos Dom</h2>
+        <h3>Eventos é tudo que pode acontecer com a div criada a cima</h3>
+        <p>por exempo:</p>
+        <p><strong>mouseenter</strong> - é disparado um evento quando o mouse entra na div</p>
+        <p><strong>mousemove</strong> - evento de quando o mouse se move dentro da div</p>
+        <p><strong>mousedown</strong> - evendo quando clica e segura</p>
+        <p><strong>mouseup</strong> - momento em que o click do mouse é solto</p>
+        <p><strong>click</strong> - evento de quando clicamos com o mouse</p>
+        <p><strong>mouseout</strong> - evento de quando o mouse sai de dentro da div</p>
+
+        <div class="explicacao02">
+            <h3>Funções</h3>
+            <p><span class="function">function</span><span class="acao"> ação(</span><span class="parametro">parametro</span><span class="acao">)</span><span class="chaves">{}</span></p>
+        </div>
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar () {            
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+
+        function entrar () {
+            a.innerText = 'Entrou'
+        }
+
+        function sair () {
+            a.innerText = 'Saiu'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

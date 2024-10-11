@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 5px;
+}
+
+:root {
+    --fundo-padrao:rgb(31, 31, 31);
+    --fundo-resultado:#666565;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    text-decoration: overline underline;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 5px;
+    text-shadow: 10px 10px 10px white;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.cabecalho h1 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+main {
+    background-color: var(--fundo-padrao);
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 7px;
+}
+
+.relacionais,.logicos,.ordem ul {
+    list-style: none;
+}
+
+.relacionais .navegacao li {
+    background-color: red;
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.relacionais .navegacao {
+    margin: 10px
+}
+
+.relacionais .navegacao .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.relacionais .conteudo {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+.relacionais .conteudo .operadores {
+    border: 2px solid black;
+}
+
+.relacionais .conteudo li {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.relacionais .conteudo .operadores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.relacionais .conteudo .operador {
+    display: inline-block;
+    background-color: red;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 22px;
+    margin: 5px;
+    padding: 5px;
+} 

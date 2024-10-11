@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operradores</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Operadores Aritiméticos parte 2</h1>
+    </header>
+
+    <main>
+        
+        <div class="relacionais">
+            <header class="primeiro">
+                <h2>Operadores relacionais</h2>
+            </header>
+            <nav class="navegacao">
+                <ul class="menu">
+                    <li class="item"><code>&gt;</code><span> (Maior)</span></li>
+                    <li class="item"><code>&lt;</code><span> (Menor)</span></li>
+                    <li class="item"><code>&gt;=</code><span> (Maior igual)</span></li>
+                    <li class="item"><code>&lt;=</code><span> (Menor igual)</span></li>
+                    <li class="item"><code>==</code><span> (Igual)</span></li>
+                    <li class="item"><code>===</code> <span> (Identico)</span></li>
+                    <li class="item"><code>!=</code> <span> (Diferente)</span></li>
+                </ul>
+            </nav>
+            <h3>Pra toda expressão que tenha um operador relacional ligada a ela, o resultado vai ser sempre booleano (TRUE ou FALSE)</h3>
+    
+            <section class="conteudo">
+                <div class="operadores">
+                    <ul>
+                        <li>5<span class="operador">&gt;</span>2<span class="resultado"> → TRUE</span></li>               
+                        <li>7<span class="operador">&lt;</span>4<span class="resultado"> → FALSE</span></li>               
+                        <li>8<span class="operador">&gt;=</span>8<span class="resultado"> → TRUE</span></li>               
+                        <li>9<span class="operador">&lt;=</span>7<span class="resultado"> → FALSE</span></li>               
+                        <li>5<span class="operador">==</span>5<span class="resultado"> → TRUE</span></li>               
+                        <li>4<span class="operador">!=</span>4<span class="resultado"> → FALSE</span></li>  
+                    </ul>             
+                </div>
+            </section>
+        </div>
+        <div class="logicos">
+            <header class="segundo">
+                <h2>Operadores Lógicos</h2>
+            </header>
+            <ul class="menu">
+                <li class="item"><span class="operador">!</span><span> (Negação)</span></li>
+                <li class="item"><span class="operador">&&</span><span> (Conjunção (e lógico))</span></li>
+                <li class="item"><span class="operador">││</span><span> (Dijunção (OU))</span> <span class="obs">no teclado ALT+179</span></li>
+            </ul>
+            <div class="operadores">
+                <div class="negacao">!</div>
+                <div class="juntos">                    
+                    <div class="true">TRUE</div>
+                    <div class="false">FALSE</div>
+                </div>
+                <div class="conjuncao">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>  
+        
+        <div class="ordem">
+            <h3 class="subtitulo">Ordem de precedencia dos operadores</h3>
+            <div class="seta"></div>
+            <ol>
+                <li>() ** / <span>Operadores aritimeicos</span></li>
+                <li>&gt; &lt; &gt;= == ... <span>Operadores relacionais</span></li>
+                <li>* / % <span>Operadores lógicos</span><span class="ordemdois">! && ││</span></li>- <span>Operadores Lógicos</span></li>
+            </ol>
+        </div>
+        <p class="explicacao">
+            Se tivermos as expressões <span class="calculo">* / %</span> ai seguimos a ordem da esqueda para a direita, ou a que estiver primeiro
+        </p> 
+
+        <div class="logicos">
+            <header class="terceito">
+                <h2>Operadores Ternarios</h2>
+            </header>
+            <ul class="menu">
+                <li class="item"><code>?</code><span> (Interrogação)</span></li>
+                <li class="item"><code>:</code><span> (Dois pontos)</span></li>
+            </ul>
+            <p class="explicvacao">
+                Se chama Operador Ternario poque ele utiliza três blocos
+            </p>
+            <div class="caixa">
+                <ol>
+                    <li class="item-cinza">teste</li>
+                    <li class="item-vermelho">?</li>
+                    <li class="item-cinza">true</li>
+                    <li class="item-vermelho">:</li>
+                    <li class="item-cinza">false</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

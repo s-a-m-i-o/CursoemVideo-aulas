@@ -1,0 +1,45 @@
+div#area {
+    font: normal 20pt arial;
+    background-color: green;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.explicacao {
+    border: 1px solid black;
+    padding: 30px;
+    margin: 30px;
+}
+
+.explicacao h2, h3 {
+    text-align: center;
+}
+
+strong {
+    background-color: blue;
+    color: #fff;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.function {
+    color: red;
+}
+.acao {
+    color: #fff;
+}
+
+.chaves {
+    color: yellow;
+}
+
+.explicacao02 {
+    background-color: #b3afaf;
+    border: 1px solid black;
+    padding: 30px;
+    margin: 30px;
+}

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul, ol{
+    list-style: none;
+}
+.cabecalho {
+    background-color: #ccc;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    text-align: center;
+    text-decoration: underline overline;
+    letter-spacing: 3px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navegacao ul {
+    background-color: aliceblue;
+    margin: 10px;
+}
+
+main .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacao .menu .item {
+    padding: 3px 7px;
+    margin: 0 5px;
+    border: 2px solid #858585;
+    border-radius: 5px;
+}
+
+span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.conteudo {
+    background-color: antiquewhite;
+}
+
+.conteudo .operador {
+    background-color: #858585;
+}

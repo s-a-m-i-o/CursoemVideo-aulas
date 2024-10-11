@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    
+    <h1 class="titulo">Iniciando estudos com DOM</h1>
+    <div class="explicacao">
+        <p><strong>D</strong>ocument <strong>O</strong>bject <strong>M</strong>odel</p>
+        <P>Modelo de Objetos para documento</P>
+        <p>é um conjunto de objetos que rodam no navegador</p>
+    </div>
+
+    <section>
+        <div class="arvore">        
+            <h2>Árvore Dom</h2>
+            <h3>window</h3>        
+            <div class="dentro">
+                <div class="cima">locarion</div>
+                <div class="cima">document</div>
+                <div class="cima">history</div>                
+            </div>
+            <div class="fora">
+                <div class="cima">html</div>
+            </div>
+            <div class="dentro">
+                <div>
+                    <p>head
+                        <div>
+                            <p>meta</p>
+                            <p>title</p>
+                        </div>
+                    </p>
+                    <p>body
+                        <div>
+                            <p>h1</p>
+                            <p>p</p>
+                            <p>p
+                                <div>strong</div>
+                            </p>
+                            <p>div</p>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div>
+            <p>Dentro do windows temos varios objetos</p>
+    
+        </div>
+    </section>
+
+    <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    
+        <div class="msg">Aqui seria um link</div>
+
+    <section class="seletor">
+        <h2>Seletore</h2>
+        <h3>Podemos selecionar qualquer elemento dentro da arvore DOM</h3>
+
+        <div class="seletores">
+            <p>por Marca</p>
+            <p>por ID</p>
+            <p>por Nome</p>
+            <p>por Classe</p>
+            <p>por Seletori</p>
+        </div>
+        <div class="individual">
+            <div class="marca">
+                <h2>por Marca ou TagName</h2>
+                <p class="tag">getElementByTagName(' <span class="pequeno">pode usar aspas simples ou duplas</span> ')</p>
+                <p>quando utilizamos o tagName podemos selecionar mais de um elemento - <span class="linha">Linha 79</span></p>
+                <p>Para selecionar paragrafos especificos, depois dos parenteses sem espaço colocamos [] e o número do paragrafo, lembrando que se quisermos o primeiro paragrafo, temos que colcoar o 0</p>
+    
+            </div>
+
+            <div class="id">
+                <h2>por Id</h2>
+                <p class="tag">getElementById(' <span class="pequeno">pode usar aspas simples ou duplas</span> ')</p>
+            </div>
+
+            <div class="id">
+                <h2>por Name</h2>
+                <p class="tag">getElementById(' <span class="pequeno">pode usar aspas simples ou duplas</span> ')</p>
+            </div>
+
+            <div class="id">
+                <h2>por Class</h2>
+                <p class="tag">getElementClassName(' <span class="pequeno">pode usar aspas simples ou duplas</span> ')</p>
+            </div>
+
+            <div class="id">
+                <h2>por Seletor</h2>
+                <p class="tag">getElementquerySelector(' <span class="pequeno">pode usar aspas simples ou duplas</span> ')</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]
+        document.write(`Está escrito assim: ${p1.innerText}`)
+
+        // var d = document.getElementById('msg')
+        // d.style.background ='blue'
+        // d.style.color ='#fff'
+        // d.style.fontWeight='bold'
+
+        var d = window.document.querySelector(`div.msg`)
+        d.style.background = 'blue'
+        d.style.color = '#fff'
+        d.style.fontSize = '20px'
+        d.style.textAlign = 'center'
+        d.style.padding ='30px'
+        
+    </script>
+</body>
+</html>

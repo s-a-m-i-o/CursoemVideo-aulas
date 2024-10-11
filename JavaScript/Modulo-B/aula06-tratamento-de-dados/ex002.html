@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Tratamento de dados</h1>
+    </header>
+
+    <section class="one">
+
+        <div class="prompt item">
+            <div class="js">
+                <p>var n1 = prompr("Digite um número")</p>
+                <p>var n2 = prompt("Digite outro número")</p>
+                <p>var s = n1 + n2</p>
+                <p>alert("a soma dos números é" + s)</p>
+            </div>
+            <div class="js explicacao">
+                <p>No caso a cima, ele não vai somar os número, só ajuntar</p>
+                <p>Porque o PROMPT retorna como STRING</p>
+            </div>
+        </div>
+        <h2>Para somar com JS precisamos transformar STRING em NUMBER</h2>
+        <div class="prompt item">
+            <div class="js">
+                <div class="js">
+                    <p>var n1 = number.parseInt(window.prompr("Digite um número"))</p>
+                    <p>var n2 = number.parseInt(window.("Digite outro número"))</p>
+                    <p>var s = n1 + n2</p>
+                    <p>alert("a soma dos números é" + s)</p>
+                </div>
+            </div>
+            <div class="js explicacao">
+                <p>No caso a cima o NUMBER converte a string para number</p>
+                <p>assim o resultado será a soma dos dois números adicionados</p>
+            </div>
+        </div>
+
+        <h2>Transformando NUMBER em STRING</h2>
+        <div class="prompt item">
+            <div class="js">
+                <p>alert("a soma dos números é" + String(s))</p>
+            </div>
+            <div class="js explicacao">
+                <p>Para transformar Number em String existem duas maneiras</p>
+                <p>String(n)</p>
+                <p>n.toString()</p>
+            </div>
+        </div>
+
+        <h2>Utilizando TemplateString ou Template literal (PlaceHolders ${})</h2>
+        <div class="prompt item">
+            <div class="js">
+                <div class="js">
+                    <p>var n1 = number.parseInt(window.prompr("Digite um número"))</p>
+                    <p>var n2 = number.parseInt(window.("Digite outro número"))</p>
+                    <p>var s = n1 + n2</p>
+                    <p>alert(`A soma de ${n1} e ${n2} é igual a ${s}`)</p>
+                </div>
+            </div>
+            <div class="js explicacao">
+                <p>${} -para utilizar placeholder</p>
+                <p>Uma forma mais facil e moderna de "concatenar"</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script type="text/JavaScript" src="index.js"></script>
+</body>
+
+</html>

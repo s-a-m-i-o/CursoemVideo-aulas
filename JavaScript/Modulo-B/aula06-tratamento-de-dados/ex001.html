@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>JavaScript</h1>
+    </header>
+
+    <section class="one">
+
+        <div class="prompt item">
+            <h3>Prompt("Qual sua idade")</h3>
+            <p>Prompt cria um campo de escrita</p>
+        </div>
+    </section>
+
+    <script>
+        var nome = prompt("Qual seu nome? ")
+        var idade = prompt("Qual sua idade")
+
+        var n1 = Number(prompt(`${nome}, digite um número`)) //Number na frente do prompt é pra converter para número
+        var n2 = Number(prompt("digite outro numero"))
+        
+        var s = n1 + n2
+        alert(`A soma de ${n1} mais ${n2} é igual a ${s}`)
+
+        
+    
+        var nota = "Dó"
+
+        alert(`O aluno ${nome} de ${idade} anos, tirou a nota, ${nota}`)
+    </script>
+</body>
+
+</html>
