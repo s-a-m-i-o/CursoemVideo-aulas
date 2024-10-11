@@ -1,0 +1,91 @@
+.explicando {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.pt1 {
+    background-color: black;
+    padding: 50px;
+}
+
+.texto {
+    word-spacing: 2px;
+    text-align:justify;
+    padding: 10px;
+}
+
+.pt1, .pt3 p {
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    max-width: 300px;
+    min-width: 250px;
+    box-shadow: 1px 2px 5px blueviolet;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+.item:hover {
+    box-shadow: 1px 2px 30px blueviolet;
+}
+
+.pt3 {
+    background-color: black;
+    padding: 50px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+.lado-lado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pt3 .lado-lado .card {
+    height: 550px;
+    box-shadow: 1px 2px 5px blueviolet;
+    width: 350px;
+    padding: 30px;
+    margin: 15px;
+}
+
+.pt3 .lado-lado {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pt4 {
+    height: 400px;
+}
+
+.pt4 ul li {
+    list-style: none;
+}
+
+
+
+.pt4 li {
+    background-color: blueviolet;
+    padding: 10px 30px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 25px;
+}

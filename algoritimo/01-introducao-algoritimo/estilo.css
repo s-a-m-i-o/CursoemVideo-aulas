@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+    background-color: #232323;
+    padding: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.inicio img {
+    width: 500px;
+    box-shadow: 1px 1px 15px #232323;
+    border-radius: 3px;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.inicio .explicando {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article {
+    background-color: #ccc;
+}
+
+.texto {
+    width: 500px;
+    height: 200px;
+    padding: 50px;
+    border-radius: 7px;
+    margin: 7px;
+    text-align: center;
+}
+
+.texto {
+    border: 1px solid #ccc;
+}
+
+.navegacao {
+    margin-top: 10px;
+    padding: 30px;
+    background-color: #232323;
+}
+
+.navegacao nav .menu-baixo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navegacao nav .menu-baixo li {
+    padding: 7px 15px;
+}
+
+.navegacao nav .menu-baixo li a {
+    border: 1px solid #ccc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+.navegacao nav .menu-baixo li a:hover {
+    background-color: #ccc;
+    color: #000;
+    
+}
