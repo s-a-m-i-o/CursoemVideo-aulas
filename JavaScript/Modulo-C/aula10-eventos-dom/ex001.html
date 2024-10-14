@@ -24,8 +24,21 @@
         <p><strong>click</strong> - evento de quando clicamos com o mouse</p>
         <p><strong>mouseout</strong> - evento de quando o mouse sai de dentro da div</p>
 
+        <div class="explicacao">
+            <h2>Funções</h2> 
+            <p>É um conjunto de códigos que vão ser execultadas só quando o evento ocorrer, como no exemplo a cima.</p>
+            <p>Os eventos na DIV só acontecem quando tem interação com o mouse.</p>
+
+            <div class="explicacao">
+                <h2>Eventos</h2>
+                <p>Para que esse evento ocorra, temos que colocar nosso código dentro de chaves, {}, que é chamado de bloco.</p>
+                <p>Esse bloco tem q ser nomeado com uma function, geralmente os nomes das funções são ações que a gente pode fazer, que seria a açao.</p>
+                <p>E dentro dos parenteses podemos colocar alguns paramentros (OPCIONAL).</p>
+            </div>
+        </div>
+
         <div class="explicacao02">
-            <h3>Funções</h3>
+            <h3>FUNÇÃO</h3>
             <p><span class="function">function</span><span class="acao"> ação(</span><span class="parametro">parametro</span><span class="acao">)</span><span class="chaves">{}</span></p>
         </div>
     </div>
@@ -35,7 +48,7 @@
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
-
+        
         function clicar () {            
             a.innerText = 'Clicou'
             a.style.background = 'red'
@@ -44,6 +57,7 @@
         function entrar () {
             a.innerText = 'Entrou'
         }
+
 
         function sair () {
             a.innerText = 'Saiu'
