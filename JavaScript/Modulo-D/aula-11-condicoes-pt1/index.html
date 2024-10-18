@@ -1,13 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condições</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <h1>Condições pt-1</h1>
+
+    <div class="explicacao">
+        <p>Ate agora todos os códigos que fizemos no Js foram codigos na sequencia</p>
+        <ol>
+            <li>var n = 3</li>
+            <li>n += 2</li>
+            <li>alert.(n)</li>
+        </ol>
+        <p>No caso a cima, o codigo tem q seguir a ordem, ai que entram as condições</p>
+    </div>
+
+    <div class="seAcontecer">
+        <div class="circulo">1</div>
+        <div class="circulo">2</div>
+        <div class="circulo">3</div>
+        <div class="losangulo"><p>Condição</p></div>
+        <div class="opcoes">
+            <div class="item">if</div>
+            <div class="item">else</div>
+        </div>
+        <div class="circulo">Resultado</div>
+    </div>
+
+    <div class="explicacao">
+        <h2>Estrutura</h2>
+        <h3>if e eslse</h3>
+        <code>
+            <p>
+                if(condição){
+
+                }else {
+
+                }
+
+            </p>
+        </code>
+
+        <p>Dentro do bloco das condições, podem ter varios comandos</p>
+    </div>   
     
+    <h2>tipos de condição</h2>
+
+    <div class="tipos">
+        
+        <div class="simples">
+            <p>
+                if(condição){ <br>
+                true <br>
+                }
+            </p>
+        </div>
+        <div class="simples">
+            <p>
+                if(condição){ <br>
+                true <br>br
+                }else { <br>
+                    false <br>
+                }
+            </p>
+        </div>
+    </div>
+
+    <div class="detran">
+        <h1>Sistema de multas</h1>
+        
+        <div class="multas">
+            <input type="number" name="txtvel" id="txtvel" placeholder="Velocidade do carro">
+            <input type="button" value="verificar" onclick="calcular()">
+            <div id="res"></div>
+        </div>
+    </div>
+
+    <script>       
+        function calcular () {
+            var txtv = document.getElementById('txtvel');
+            var res = document.getElementById('res');
+            var vel = Number(txtv.value)
+
+            res.innerHTML = `Sua velocidade é de <strong>${vel}Km/h</strong>`
+
+                if(vel <= 60) {
+                    res.innerHTML += `<p>Não se esqueça de usar o cinto de segurança</p>`
+                }else {
+                    res.innerHTML += `<p>Vc esta a cima do limite de velocidade. <strong>MULTADO</strong></p>`
+                }
+                
+        }
+
+    </script>
 </body>
+
 </html>
